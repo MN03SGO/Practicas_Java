@@ -1,0 +1,374 @@
+10-11-2025
+
+**CONCEPTOS**
+
+JAVA JSE: java standar edition
+
+JAVA JRE: java runtime enviroment
+
+JAVA JDK: java development  kit
+
+
+**PRIMERA VISTA**
+El archivo principal es el main ya que es el que ejecuta todo lo que hagamos
+
+**PRIMEROS PASOS**
+para escribir un mensaje
+sout = System.out.printl("HOLA MUNDO")
+
+ejem:
+
+public statict void main (String [] args){
+    System.out.printl("HOLA MUNDO");
+}
+
+
+
+**VARIABLES Y CONSTANTES**
+
+Variable es una asignacion que nosotros hacemos que puede contener diferentes valores de datos
+
+ejem:
+gato = blanco;
+edad = 18;
+
+Constates es una asignacion definida que no cambia, siempre se mantiene igual
+
+pi = 3.1416
+
+
+**TIPOS DE DATOS**
+
+-numeros enteros = int (1,2,3)
+-texto o mensajes = String ("HOLA")
+-decimales = double (1.2,1.5)
+-V o F = boolean
+-caracteres = char ('a','b') siempre va el caracter individual en comilla simple
+-numeros enteros largos = long
+
+
+String: no es un tipo de dato primitivo, es una clase que se ocupa como tipo de dato primitivo clase wrapperd
+o clase integradora
+
+**DECLARACION DE VARIABLES**
+
+las declaraciones de variables se hace con un tipo de datos y el nombre de la val
+
+ejem:
+
+String fruta;
+int numero;
+
+**PRACTICA**
+Desarrollar un sistema con print y variables de escenario real
+OCUPAR: String, int, bolean, double,
+
+Formulario: asistencia de TIENDA DE ZAPATOS (COMPRADOR)
+datos: Nombres, Apellidos, telefono, precio, retiro
+
+
+
+
+11-11-2025
+
+**OPERADORES**
+    ES  un simbolo que indica la accion,  ya se de suma o de igualacion
+
+RELACIONALES:
+==  IGUAL
+=> <= MAYOR Y MENOR IGUAL QUE
+<> MAYOR MENOR
+!= distinto o igual que
+
+CONDICIONAL
+
+&& = and
+|| = or (excluyente)
+! = not o negacion
+
+EL SIGNO DE ADMIRACION SIEMPRE SIGNIFICARA NEGACION
+
+
+**CLASE SCANNER**
+NOS PERMITE ESCRIBIR PARA ALMACENAR EL DATO EN X VARIABE
+
+*COMO SE OCUPA*
+
+Scanner teclado = new Scanner(System.int);
+
+**COMO SE LEE PARA QUE ESCRIBAMOS**
+variable = teclado.depende el dato
+
+
+ejemplo **SUMA DE NUMEROS**;
+
+public static void main (String [] args){
+
+        int n1, n2, tota;
+
+
+        System.out.printl("**SUMATORIA DE NUMEROS**");
+        //se crea clase SCANNER para poder escribir
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.printl("PRIMER NUMERO");
+        n1 = entrada.nextInt();
+        System.out.printl("SEGUNDO NUMERO");
+        n2 = entrada.nextInt();
+        tota = n1+n2;
+
+        System.out.printl("LA SUMA ES: "+tota);
+
+
+}
+
+** LO MISMO SERIA PARA MULTIPLICAR Y RESTAR
+** PARA DIVISION ES LO MISMO PERO SE CAMBIA EL TIPO DE DATO A double
+
+
+
+**CONDICIONALES EN JAVA**
+mecanismos que permiten que el programa siga diferentes rutas
+
+estructuras mas utilizadas en java
+
+if, else, elif, Switch
+(else if) anidados de else + if
+
+
+*EJEMPLO
+//EDAD MAYOR O MENOR
+public static void main(String [] args){
+        int edad;
+        Scanner tecla = new Scanner(System.in);
+
+
+        System.out.printl("INGRESE LA EDAD")
+        edad = tecla.nextInt();
+        if(edad>10){
+                System.out.printl("ERES MAYOR");
+
+        }else{
+                System.out.printl("NO ERES MAYOR")
+
+        }
+
+
+}
+
+
+**CONDICIONALES MULTIPLES
+son las que anidan o integran uno o mas entradas para posibles caminos:
+
+
+eje:
+public static void main(String[] args) {
+        int edad;
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("INGRESE LA EDAD: ");
+        edad = teclado.nextInt();
+
+        if(edad>18){
+            System.out.println("ERES LEGAL");
+        }else if(edad==18){
+            System.out.println("ESTAS EN UN PUNTO MEDIO");
+
+        }else{
+            System.out.println("NO ERES LEGAL");
+        }
+
+    }
+
+**SWITCH
+ PERMITE MULTIPLES CAMINOS A PARTIR DE UNA ENTRADA, se  ejecuta mediante una evaluacion de la condicion y un conjunto de sentencias (case) y todas se separan por un brake, que lo rompe
+
+
+ AL FINAL LO HICE CON IF, ELSE IF Y ELSE
+
+     System.out.println("***ESCUELA NUEVA LUZ***");
+        int edad;
+
+        Scanner entra = new Scanner(System.in);
+        System.out.println("- Ingrese la edad del alumno: ");
+        edad = entra.nextInt();
+
+
+        //IF, ELSE, IF
+
+        if(edad >= 4 && edad <=6){
+            System.out.println("**EL HORARIO ES**");
+            System.out.println("Lunes y miercoles de 16 a 17");
+
+        }
+        else if(edad >=7 && edad <=8){
+            System.out.println("**EL HORARIO ES**");
+            System.out.println("Martes y jueves de 16:30 a 17:30");
+
+        }
+        else if(edad >=9 && edad <=10){
+            System.out.println("**EL HORARIO ES**");
+            System.out.println("Martes y jueves de 17:30 a 19");
+        }
+        else if(edad >= 11 && edad <= 13){
+            System.out.println("**EL HORARIO ES**");
+            System.out.println("Lunes y miercoles de 17 a 18:30");
+        }
+        else{
+            System.out.println("LA EDAD ES INCORRECTA");
+        }
+
+
+2:19.59 MOMENTO VIDEO
+
+**OPERADORES TERNARIOS**
+Permite simplificar lineas de codigo en un una sola linea
+
+ ya que se basa en una condicion que asigna valor a una varible o exprecion oara validar  si es TRUE O FALSE
+
+
+ FORMULA
+
+ variable = (condicion) ? APLICA: NO APLICA;
+
+        /*EJEMPLO:
+            UN PROGRAMA QUE DEPENDIENDO DEL PROMEDIO DE UN ALUMNO,
+            NOS DIGA SI APROBO O NO UNA MATERIA
+        */
+
+
+        MANERAS DE HACERLO, LO HICE CON UN IF Y UN ELSE, PREGUNTANDO
+        //por alguna razon se me vino a la mente preguntar la nota de cada materia
+
+
+public static void main(String [] args){
+        //el mismo codigo a expecion que
+
+
+        if(FIN >= 5){
+            sout("APROBO);]
+
+        }
+        else{
+            sout("NO APROBO);
+        }
+
+}
+
+ // USANDO TERNARIO
+
+public static void main(String  [] args){
+    int mat1, mat2, mat3, mat4, sumFIN, FIN;
+    String estu, FINAL;
+    Scanner entra = new Scanner (System.in);
+
+        System.out.println("**PROMEDIO DE MATERIA**");
+        System.out.println("Ingrese nombre del alumno: ");
+        estu = entra.next();
+        System.out.println("**Ingrese LA NOTA QUE SACO**");
+        System.out.println("---Materias---");
+        System.out.println("CLASE 1");
+        System.out.println("MATEMATICAS");
+        mat1 = entra.nextInt();
+        System.out.println("CLASE 2");
+        System.out.println("SOCIALES");
+        mat2 = entra.nextInt();
+        System.out.println("CLASE 3");
+        System.out.println("CIENCIAS");
+        mat3 = entra.nextInt();
+        System.out.println("CLASE 4");
+        System.out.println("LENGUAJE");
+        mat4 = entra.nextInt();
+
+
+        sumFIN = (mat1 + mat2 + mat3 + mat4);
+        FIN = sumFIN/4;
+
+        FINAL = (FIN >= 5) ? "APROBADO": "NO APROBO" ;
+
+}
+
+RECORDAR QUE UN SECUENCIA  TERNARIA LLEVA:
+ VARIABLE = (CONDICION) ? "APROBACION" : "NEGACION"
+
+
+ codigo integrado los 2 TERNARIO DIRECTO PROMEDIO Y EL OTRO
+
+
+     public static void main(String[] args) {
+        //formula: variable = (condicion) ? si_aplica : no_aplica;
+
+
+        /*EJEMPLO:
+            UN PROGRAMA QUE DEPENDIENDO DEL PROMEDIO DE UN ALUMNO,
+            NOS DIGA SI APROBO O NO UNA MATERIA
+        */
+
+        int materia1,materia2,materia3,materia4,totaSUM, totaFIN;
+        //SECION MANUAL
+        String promedioFIN;
+        double prome;
+        //ENTRADA
+        int elegir;
+        String estu;
+        Scanner entra = new Scanner(System.in);
+        System.out.println("**CALCULAR ALUMNOS APROBADOS**");
+        System.out.println("**__________________________*");
+        System.out.println("**1- (MANUAL) PARA PROMEDIO X MATERIA**");
+        System.out.println("**2- (DIRECTO) PARA PROMEDIO**");
+        elegir = entra.nextInt();
+
+        switch (elegir){
+            case 1:
+                 System.out.println("**PROMEDIO DE MATERIA**");
+                 System.out.println("Ingrese nombre del alumno: ");
+                 estu = entra.next();
+                 System.out.println("**Ingrese LA NOTA QUE SACO**");
+                 System.out.println("---Materias---");
+                 System.out.println("CLASE 1");
+                 System.out.println("MATEMATICAS");
+                 materia1 = entra.nextInt();
+                 System.out.println("CLASE 2");
+                 System.out.println("SOCIALES");
+                 materia2 = entra.nextInt();
+                 System.out.println("CLASE 3");
+                 System.out.println("CIENCIAS");
+                 materia3 = entra.nextInt();
+                 System.out.println("CLASE 4");
+                 System.out.println("LENGUAJE");
+                 materia4 = entra.nextInt();
+        //SUMA DE LAS NOTAS
+                totaSUM = (materia1+materia2+materia3+materia4);
+                totaFIN = totaSUM/4;
+                promedioFIN = (totaFIN >= 5) ? "APROBADO" : "DESAPROBADO";
+                System.out.println("total: "+promedioFIN);
+                break;
+            case 2:
+                System.out.println("INGRESE PROMEDIO");
+                prome = entra.nextDouble() ;
+                promedioFIN = (prome>=5) ? "APROBADO": "DESAPROBADO";
+                System.out.println("ALUMNO: "+promedioFIN);
+                break;
+        }
+        entra.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
