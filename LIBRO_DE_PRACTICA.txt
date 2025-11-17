@@ -356,6 +356,28 @@ RECORDAR QUE UN SECUENCIA  TERNARIA LLEVA:
 }
 
 
+16-11-2025
+
+Repaso del ejercicio de la secuencia ternaria
+
+
+VALIDACION                      VERIFICACION
+
+
+PROBLEMA                        PASO
+
+MENORES A <5                    PASO
+
+MAYORES O IGUAL A 5 Y
+MENORES O IGUAL QUE 15          PASO
+
+
+
+
+
+
+
+
 
 
 
