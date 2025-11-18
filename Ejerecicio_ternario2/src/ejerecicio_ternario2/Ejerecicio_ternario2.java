@@ -33,19 +33,31 @@ public class Ejerecicio_ternario2 {
 
             if (canti_PRODU > 5 && canti_PRODU <= 15) {
                 System.out.println("EL COSTO DE ENVIO ES DE $10");
-                monto = +10;
-                
+                monto = monto + 10;
+              
+
+
             } else {
-                System.out.println("EL ENVIO ES GRATIS");
+                 if (monto < 100) {
+                    montoFALTANTE = 100 - monto;
+                    System.out.println("EL MONTO ES MENOR A $100, LE HACEN FALTA $" + montoFALTANTE);
+                } else if (monto > 100 && monto < 300) {
+                    //FORMULA
+                    montoDESCUENTO1 = (monto * 0.05);
+                    nuevoMONTO1 = (monto - montoDESCUENTO1);
+                    System.out.println("POSEE UN DESCUENTO DEL 5% sobre el total");
+                    System.out.println("EL DESCUENTO ES EQUIVALENTE " + montoDESCUENTO1);
+                    System.out.println("SU NUEVO MONTO CON DESCUENTO ES DE: $" + nuevoMONTO1);
+                }else{
+                    montoDESCUENTO1 = (monto * 0.10);
+                    nuevoMONTO1 = (monto - montoDESCUENTO1);
+                    System.out.println("POSEE UN DESCUENTO DEL 10% sobre el total");
+                    System.out.println("EL DESCUENTO ES EQUIVALENTE " + montoDESCUENTO1);
+                    System.out.println("SU NUEVO MONTO CON DESCUENTO ES DE: $" + nuevoMONTO1);
+                    
+                
             }
-
-            if (monto < 100) {
-                montoFALTANTE = 100 - monto;
-                //OPERACION DE MONTO
-                System.out.println("EL MONTO ES MENOR A $100, LE HACEN FALTA $" + montoFALTANTE);
-
             }
-
         }
 
     }
