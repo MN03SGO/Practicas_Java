@@ -9,56 +9,53 @@ import java.util.Scanner;
 public class Ejerecicio_ternario2 {
 
     public static void main(String[] args) {
-
-        //reutilizar la variable de entra
-        int canti_PRODU;
-        double monto, montoFALTANTE, montoDESCUENTO1, montoDESCUENTO2, nuevoMONTO1, nuevoMONTO2;
-
+        int cant_PRODUCTOS;
+        
+        double monto;
+        
+        System.out.println("_________________________________");
+        System.out.println("INGRESE LA CANTIDAD DE PRODUCTOS");
+        System.out.println("_________________________________");
         Scanner entra = new Scanner(System.in);
+        cant_PRODUCTOS = entra.nextInt();
+        
+        
+        System.out.println("_________________________________");
+        System.out.println("INGRESE EL MONTO");
+        System.out.println("_________________________________");
+        entra = new Scanner(System.in);
+        monto = entra.nextDouble();
+            
 
-        System.out.println("Ingrese la cantidad de paquetes");
-        canti_PRODU = entra.nextInt();
-
-        if (canti_PRODU < 5) {
-            System.out.println("NO SE PERMITEN COMPRAS MENORES A 5 PAQUETES");
-            if (canti_PRODU <= 0) {
-                System.out.println("NO SE PERMITEN CANTIDADES NEGATIVAS");
-            }
-        } else {
-            //REUTILIZACION DE VARIABLE ENTRA
-
-            entra = new Scanner(System.in);
-            System.out.println("EL MONTO ES DE: ");
-            monto = entra.nextDouble();
-
-            if (canti_PRODU > 5 && canti_PRODU <= 15) {
-                System.out.println("EL COSTO DE ENVIO ES DE $10");
-                monto = monto + 10;
-              
-
-
-            } else {
-                 if (monto < 100) {
-                    montoFALTANTE = 100 - monto;
-                    System.out.println("EL MONTO ES MENOR A $100, LE HACEN FALTA $" + montoFALTANTE);
-                } else if (monto > 100 && monto < 300) {
-                    //FORMULA
-                    montoDESCUENTO1 = (monto * 0.05);
-                    nuevoMONTO1 = (monto - montoDESCUENTO1);
-                    System.out.println("POSEE UN DESCUENTO DEL 5% sobre el total");
-                    System.out.println("EL DESCUENTO ES EQUIVALENTE " + montoDESCUENTO1);
-                    System.out.println("SU NUEVO MONTO CON DESCUENTO ES DE: $" + nuevoMONTO1);
-                }else{
-                    montoDESCUENTO1 = (monto * 0.10);
-                    nuevoMONTO1 = (monto - montoDESCUENTO1);
-                    System.out.println("POSEE UN DESCUENTO DEL 10% sobre el total");
-                    System.out.println("EL DESCUENTO ES EQUIVALENTE " + montoDESCUENTO1);
-                    System.out.println("SU NUEVO MONTO CON DESCUENTO ES DE: $" + nuevoMONTO1);
-                    
-                
-            }
+        
+        
+        
+        if(cant_PRODUCTOS <5){
+            entra = new Scanner(System.in);entra = new Scanner(System.in);
+            
+            System.out.println("--No se permiten compras menores a 5 productos--");
+            if(cant_PRODUCTOS <=0){
+                System.out.println("--NO SE PERMITEN COMPRAS NEGATIVAS");
             }
         }
+        
+        else {
+            if (cant_PRODUCTOS >= 5 && cant_PRODUCTOS <= 15) {
+                System.out.println("EL COSTO DE ENVIO ES DE $10");
+            } else if (cant_PRODUCTOS > 15) {
+                System.out.println("EL ENVIO ES GRATIS **");
+            }
 
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 }
