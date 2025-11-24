@@ -374,6 +374,26 @@ MENORES O IGUAL QUE 15          PASO
 
 
 
+23-11-2025
+ESTRUCTURAS REPETITIVAS
+
+Permite ejecutar una porcion de codigo por una determinada cantidad de veces. Se conoce como bucle
+
+existen dos tipos de bucles:
+controlados por un contador.
+controlados por sentinela.
+
+
+-- BUCLE CONTADOR:
+    Un bucle que tiene X cantidad de veces para ejecutarse
+
+-- BUCLE SENTINELA:
+    Solo se ejecuta mientras una opcion sea verdadera
+
+
+
+
+
 
 
 
