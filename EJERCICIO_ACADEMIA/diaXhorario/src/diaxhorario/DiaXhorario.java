@@ -44,8 +44,6 @@ public class DiaXhorario {
         else if(edad >= 11 && edad<=13){
            System.out.println(" lunes y miercoles de 17 a 18:30");
         }
-       
-        
         else{
             System.out.println("INGRESE UNA EDAD VALIDA");
         }
