@@ -367,7 +367,7 @@ VALIDACION                      VERIFICACION
 PROBLEMA                        PASO
 
 MENORES A <5                    PASO
-
+g
 MAYORES O IGUAL A 5 Y
 MENORES O IGUAL QUE 15          PASO
 
