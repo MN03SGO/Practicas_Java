@@ -7,8 +7,15 @@ package buclefor;
 public class BucleFor {
 
     public static void main(String[] args) {
+        int suma =0;
           for(int contador =0;contador <10;contador ++ ){
               System.out.println("ESTOY EN UNA VUELTA  "+contador);
+              suma = 5 +contador;
+              
+              if(suma>=7){
+                  contador = 11;
+              }
+                  
           }
     }
     
