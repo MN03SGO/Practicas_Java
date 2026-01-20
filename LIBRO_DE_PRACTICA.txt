@@ -377,12 +377,17 @@ MENORES O IGUAL QUE 15          PASO
 23-11-2025
 ESTRUCTURAS REPETITIVAS
 
+17/01/2025
+RECAPITULACION
+
+
 Permite ejecutar una porcion de codigo por una determinada cantidad de veces. Se conoce como bucle
 
 existen dos tipos de bucles:
 controlados por un contador.
 controlados por sentinela.
 
+UN BUCLE PUEDE PARAR DE ACUERDO A ALAS SIGUIENTES CONDICIONES
 
 -- BUCLE CONTADOR:
     Un bucle que tiene X cantidad de veces para ejecutarse
@@ -390,10 +395,63 @@ controlados por sentinela.
 -- BUCLE SENTINELA:
     Solo se ejecuta mientras una opcion sea verdadera
 
+    EJEMPLO DE BUCLE CONTADOR
+     una variable tiene un valor = 0
+    y mientras esa variable sea <10 que se repita hasta que llegue a 10 y una vez llegue a 10 deja de ejecutarse y sigue lo decimales
+    OJO, PERO EN CADA VUELTA SE INCREMENTA +1 HASTA LLEGAR DE 0 A 10
+
+    CONTADOR = 0
+    CONTADOR <10
+    //SI DATO INGRESADO ESTA EN EL RANGO DE 0 A 10
+    //APLICA LO SIGUIENTES
+    CONTADOR = CONTADOR + 1 // INCREMENTE UNA VUELTA HASTA LLEGAR A 10 y seguir la ruta natural
+
+    EJEMPLO DE BUCLE CENTINELA
+
+    Existe un valor boleano que valua que accion hacer
+
+19/01/2025
+
+BUCLE DO WHILE
+
+se repite una x cantidad de veces, pero siempre la condicion se evalua al final
+    eje:
+    CONTADOR = 0
+    hace el conjunto de acciones
+    y evalua al final
+
+
+WHILE---
+    Es  la estructura repetitiva mas usada
+    y lo que hace es que mientras se cumpla una condicion ejecuta una porcion del codigo, cuando deja de cumplirse deja la codncion y sale del bucle y sigue con los demas del codigo
+
+
+    EJE:
+       while(bandera == true ){
+            System.out.println(" EL VALOR DE LA BANDERA ES:  "+bandera);
+            System.out.println("ESTAS EN LA SILLA? "+bandera);
+            System.out.println("TE QUERES LEVANTAR DE LA SILLA");
+
+            respue = leva.next();
+            if (respue.equalsIgnoreCase("si") ){
+                bandera = false;
+                System.out.println("POR QUE QUIERES DESUSCRIBIR");
+            }
 
 
 
+            equals= valor para entrada de String de letras
+            equalsIgnoreCase ignora minuscula y mayus
 
+FOR---
+    Realiza un bucle una determinada cantidad de veces. Se le puede considerara contralo por contador
+
+    esta compuesta por tres partes:
+    -inicializacion de la variable: la que utilizaremos y que solo se evalua una vez
+
+    -condicion del fin del ciclo: se evalua al principio de cada iteracion
+
+    -modificacion de la variable: se ejecuta al final
 
 
 
