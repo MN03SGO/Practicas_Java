@@ -18,7 +18,8 @@ public class CODEWAR_FUNCION_IF {
  
     public static void main(String[]arg){ 
 
-        int edad; 
+        int edad;
+
         Scanner tecla = new Scanner(System.in);
         
        
