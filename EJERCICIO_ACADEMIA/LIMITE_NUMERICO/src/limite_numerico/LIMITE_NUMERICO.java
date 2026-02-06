@@ -4,17 +4,20 @@
  */
 package limite_numerico;
 
-/**
- *
- * @author sigaran
- */
+import java.util.Scanner;
+
 public class LIMITE_NUMERICO {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+  
+        for (int i = 200; i<250; i++){
+            System.out.println(i);
+          }
+
+ 
+
+      }
     }
     
-}
+

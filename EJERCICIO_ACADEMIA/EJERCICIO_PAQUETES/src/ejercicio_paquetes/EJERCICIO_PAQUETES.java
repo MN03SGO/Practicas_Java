@@ -1,20 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package ejercicio_paquetes;
 
 import java.util.Scanner;
 
-/**
- *
- * @author sigaran
- */
 public class EJERCICIO_PAQUETES {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         int paquetes;
         double precio;
