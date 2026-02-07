@@ -455,6 +455,14 @@ FOR---
 
 
 
+07-02-2025 
+-- RECAPITULACION -- 
+ademas de contadores hay acumuladores 
+contadores = contar vueltas de un bucle
+acumuladores = acumular valores es una op del bucle
+
+
+
 
 
 
