@@ -461,9 +461,15 @@ ademas de contadores hay acumuladores
 contadores = contar vueltas de un bucle
 acumuladores = acumular valores es una op del bucle
 
+12-02-2025
+--Arreglos (arrays) vectores o matrices
 
+son arreglos o conjuntos de datos se almacenan en memoria de manera contigua con el mismo nombre, pero con diferentes
+indices para diferenciar una de ellos
 
+mantinienen su tamano durante la ejecucion del programa
 
+tienen el mismo nombre todas pero difiere el indice de cada una de ella (posicion en la que estan)
 
 
 
