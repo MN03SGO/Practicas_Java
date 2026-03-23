@@ -3,7 +3,7 @@ package ejerciciowhile;
 
 import java.util.Scanner;
 
-public class EjercicioWhile {
+public class -EjercicioWhile {
 
     public static void main(String[] args) {
       //**  int  contador  = 0;

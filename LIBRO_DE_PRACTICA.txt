@@ -472,6 +472,10 @@ mantinienen su tamano durante la ejecucion del programa
 tienen el mismo nombre todas pero difiere el indice de cada una de ella (posicion en la que estan)
 
 
+22-03-2025
+
+-Metodos de array
+-.length = cantidad de longitud
 
 
 
