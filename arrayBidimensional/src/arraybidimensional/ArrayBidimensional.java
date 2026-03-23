@@ -1,20 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package arraybidimensional;
 
-/**
- *
- * @author sigaran
- */
-public class ArrayBidimensional {
+import java.util.Scanner;
 
-    /**
-     * @param args the command line arguments
-     */
+public class ArrayBidimensional {
     public static void main(String[] args) {
-        // TODO code application logic here
+        int matriz [][] = new int [3][3];
+        Scanner tecla = new Scanner(System.in);
+        for(int f = 0; f<3; f++){
+            for( int c = 0; c<3 ; c++){   
+            }
+            
+            
+        
+        }
+        
+
     }
-    
 }

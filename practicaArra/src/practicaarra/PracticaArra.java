@@ -29,8 +29,8 @@ public class PracticaArra {
         }
         System.out.println("Estoy en el indice  mi valor es: ");
         
-         for (int i = 0; i<numeros.length; i++ ){
-             System.out.println("indice: "+i+"valor: "+numeros[i]);
+        for (int i = 0; i<numeros.length; i++ ){
+             System.out.println("indice: "+i+" valor: "+numeros[i]);
 
         }
          
