@@ -471,18 +471,51 @@ mantinienen su tamano durante la ejecucion del programa
 
 tienen el mismo nombre todas pero difiere el indice de cada una de ella (posicion en la que estan)
 
+tienen un solo tamano y cada array solo se pueden ocupar con un tipo de datos para todos y no se puede mesclar son estaticos
+
+--tipos de arrays:
+bidimensionales y unidimensionales
+
+Unidi: poseen una sola fila o solo columnas
+
+Bidi: forman tabla de valores, donde existen dos dimensiones tanto filas como columnas
+
+
+Unidimensionales (vectores):
+ eje,
+ int numeros [] = new int [8];
 
 
 
+05/04/2026
+
+MATRICES
 
 
+    public static void main(String[] args) {
+        int matri [] [] = new int [3][3];
+        Scanner  entra = new Scanner(System.in);
+
+        for(int f=0; f <3; f++){
+            for( int c = 0; c <3; c++){
+                System.out.println("INGRESE EL VALOR DE LA FILA: "+ f +" COLUMNA "+ c ) ;
+                matri [f][c] = entra.nextInt();
+            }
+        }
+
+        //recorrido de la muestra
+
+        for (int  f =0; f < 3; f ++){
+            for (int c=0; c < 3; c++){
+                System.out.println("Fila: "+ f +" Columna: "+ c + " Matriz: " + matri[f][c]);
 
 
+        }
+        }
 
+06/04/2026
+ERORES POR DESBORDAMIENTO: Se da en vectores y matricez, es cuando se accede a la posicion de una matriz, que no esta conteplada la matriz que tenga ese espacio
 
+ejemplo:
 
-
-
-
-
-
+esta un vector de 20 posiciones  y se quiere acceder a la posicion 21 de la matriz. Cosa que dara falla por que no existe una posicion 21
