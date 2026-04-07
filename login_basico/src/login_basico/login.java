@@ -8,7 +8,7 @@ public class login extends javax.swing.JFrame {
 
     public login() {
         initComponents();
-        this.dispose();
+       
     }
 
     @SuppressWarnings("unchecked")
@@ -96,17 +96,17 @@ public class login extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEntrarActionPerformed
 
     private void btnEntrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEntrarMouseClicked
-     String usuario = "Admin";
-     String contra  = "123";
-     
-     String  pass = new String(entrada_contra.getPassword());
-     if(entrada_usuario.getText().equals(usuario)&& pass.equals(contra))
-       JOptionPane.showMessageDialog(null,"EXITO");
+        String usuario = "admin";
+        String contra = "123";
         
-     else{
-         JOptionPane.showMessageDialog(null,"DENEGADO");
-     
-     }
+        String pass = new String(entrada_contra.getPassword());
+        if(entrada_usuario.getText().equalsIgnoreCase(usuario)&& pass.equals(contra)){
+            JOptionPane.showConfirmDialog(null, "ENTRAR");
+            
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "FAIL");
+        }
      
      
     }//GEN-LAST:event_btnEntrarMouseClicked
