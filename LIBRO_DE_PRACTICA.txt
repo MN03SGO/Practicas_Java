@@ -523,3 +523,24 @@ ERORES POR DESBORDAMIENTO: Se da en vectores y matricez, es cuando se accede a l
 ejemplo:
 
 esta un vector de 20 posiciones  y se quiere acceder a la posicion 21 de la matriz. Cosa que dara falla por que no existe una posicion 21
+
+
+09-04-2026
+
+MODELO DE CAPAS
+Patron de designe, en aplicaciones de escritorio.
+Modelo web = MVC: modelo vista controlador
+Escritorio = Modelo de capas; tiene 3 tablas; interfaz grafica, logica de negocio y controlador BD
+
+
+--GUI--
+INTERFAZ DE USUARIO
+
+--LOGICA--
+CEREBRO DE TODO (INTERMEDIARIA QUE COMUNICA A AMBAS)
+
+--PERSISTENCIA--
+PROCESO DE FILTRADO EN LA SOLICITUD DE LA HACIA LA BD
+
+
+--permite acoplar, de la manera de escritorio a web o a mobile
